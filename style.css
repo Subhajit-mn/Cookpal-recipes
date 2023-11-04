@@ -7,6 +7,17 @@ body {
   padding: 0;
 }
 
+.Mobile__nav {
+    width: 70vw;
+    height: 1100%;
+    position: absolute;
+    background-color: white;
+    z-index: 99;
+    padding: 20px;
+    display: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 header {
   background-color: #ffffff;
   display: flex;
@@ -163,6 +174,13 @@ p {
   margin: 1.4% auto;
 }
 
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid gray;
+}
 /* Style for the search title */
 .search-title {
   font-size: 1.5em; 
@@ -174,8 +192,7 @@ p {
 #searchInput {
   padding: 1em; 
   width: 98%;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+  border: none;
   font-size: 1em; 
   text-align: left;
 }
@@ -251,6 +268,33 @@ footer li {
 .footer-icons {
   display: flex;
   flex-direction: column;
+}
+
+.email__input {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.input__area {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+}
+.input__area>input{
+    border: none;
+}
+.subscibe-btn {
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.subscibe-btn:hover{
+    cursor: pointer;
 }
 
 #social {
@@ -401,6 +445,13 @@ footer li {
 
 /* Responsive design */
 @media (max-width: 767px) {
+    /* .menu-bar>ul{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    } */
+
   .card {
     width: 70%;
   }

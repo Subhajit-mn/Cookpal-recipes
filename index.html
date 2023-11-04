@@ -15,6 +15,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav class="Mobile__nav" style="transition: all 0.5s ease 0s; display: none;">
+        <div class="mobile-row">
+          <div class="Mobile__right">
+            <img src="./assets/Cookpal 1.png" alt="logo" class="Mobile__logo">
+          </div>
+          <div class="account__img">
+            <img src="./assets/Ellipse 2.png" alt="">
+          </div>
+        </div>
+        <div class="Mobile__left">
+          <ul class="Mobile___nav-ul">
+            <li class="Mobile__nav-links">
+              <a href="#home" id="HomeNav">Home</a>
+            </li>
+            <li class="Mobile__nav-links">
+              <a href="#explore" id="ExploreNav">Explore</a>
+            </li>
+            <li class="Mobile__nav-links">
+              <a href="#help" id="HelpNav">Help</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
     <header>
       <div class="logo">
         <svg
@@ -47,7 +70,7 @@
           </defs>
         </svg>
       </div>
-      <nav>
+      <nav class="menu-bar">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Explore</a></li>
@@ -71,7 +94,10 @@
     <!-- search -->
     <div class="search">
       <p class="search-title">Search for Recipes</p>
-      <input type="text" id="searchInput" placeholder="Search by recipe name" />
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search by recipe name"/>
+        <img src="./Search-btn.png" alt="search" style="height: 52px;">
+      </div>
     </div>
 
     <!-- Toggle Recipe Type  -->
@@ -211,6 +237,13 @@
               Ut risus mattis interdum faucibus facilisi. Facilisi purus
               accumsan aliquam.
             </li>
+            <div class="email__input">
+                <div class="input__area">
+                  <input type="email" name="" placeholder="Your Email" id="email">
+                  <img src="./at.png" alt="">
+                </div>
+                <button class="subscibe-btn">Subscibe</button>
+              </div>
           </ul>
         </div>
       </div>
